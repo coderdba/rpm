@@ -1,0 +1,1 @@
+rpm -ivh  build/distributions/etcd_3.1.11_installer-0-1.noarch.rpm

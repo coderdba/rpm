@@ -1,0 +1,99 @@
+$ ./gradlew
+Downloading https://services.gradle.org/distributions/gradle-3.4.1-bin.zip
+...........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Unzipping /Users/dbgsm0/.gradle/wrapper/dists/gradle-3.4.1-bin/71zneekfcxxu7l9p7nr2sc65s/gradle-3.4.1-bin.zip to /Users/dbgsm0/.gradle/wrapper/dists/gradle-3.4.1-bin/71zneekfcxxu7l9p7nr2sc65s
+Set executable permissions for: /Users/dbgsm0/.gradle/wrapper/dists/gradle-3.4.1-bin/71zneekfcxxu7l9p7nr2sc65s/gradle-3.4.1/bin/gradle
+Git repository not found at /mywork/rpm/gradle -- nebula-release tasks will not be available. Use the git.root Gradle property to specify a different directory.
+:help
+
+Welcome to Gradle 3.4.1.
+
+To run a build, run gradlew <task> ...
+
+To see a list of available tasks, run gradlew tasks
+
+To see a list of command-line options, run gradlew --help
+
+To see more detail about a task, run gradlew help --task <task>
+
+BUILD SUCCESSFUL
+
+Total time: 2 mins 22.508 secs
+$ vi gradlew
+$ ls -l
+total 40
+-rw-r--r--  1 dbgsm0  DHC\Domain Users   343 Jul 11 09:04 build.gradle
+drwxr-xr-x  3 dbgsm0  DHC\Domain Users   102 Jul 11 09:10 gradle
+-rwxr-xr-x  1 dbgsm0  DHC\Domain Users  5299 Jul 11 09:10 gradlew
+-rw-r--r--  1 dbgsm0  DHC\Domain Users  2260 Jul 11 09:10 gradlew.bat
+-rw-r--r--  1 dbgsm0  DHC\Domain Users    34 Jul 11 09:01 preInstall.sh
+
+$ which gradlew
+./gradlew
+$ 
+$ gradlew tasks
+Git repository not found at /mywork/rpm/gradle -- nebula-release tasks will not be available. Use the git.root Gradle property to specify a different directory.
+:tasks
+
+------------------------------------------------------------
+All tasks runnable from root project
+------------------------------------------------------------
+
+Build tasks
+-----------
+assemble - Assembles the outputs of this project.
+build - Assembles and tests this project.
+clean - Deletes the build directory.
+
+Build Setup tasks
+-----------------
+init - Initializes a new Gradle build. [incubating]
+wrapper - Generates Gradle wrapper files. [incubating]
+
+Help tasks
+----------
+buildEnvironment - Displays all buildscript dependencies declared in root project 'gradle'.
+components - Displays the components produced by root project 'gradle'. [incubating]
+dependencies - Displays all dependencies declared in root project 'gradle'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'gradle'.
+dependentComponents - Displays the dependent components of components in root project 'gradle'. [incubating]
+help - Displays a help message.
+model - Displays the configuration model of root project 'gradle'. [incubating]
+projects - Displays the sub-projects of root project 'gradle'.
+properties - Displays the properties of root project 'gradle'.
+tasks - Displays the tasks runnable from root project 'gradle'.
+
+Verification tasks
+------------------
+check - Runs all checks.
+
+Rules
+-----
+Pattern: clean<TaskName>: Cleans the output files of a task.
+Pattern: build<ConfigurationName>: Assembles the artifacts of a configuration.
+Pattern: upload<ConfigurationName>: Assembles and uploads the artifacts belonging to a configuration.
+
+To see all tasks and more detail, run gradlew tasks --all
+
+To see more detail about a task, run gradlew help --task <task>
+
+BUILD SUCCESSFUL
+
+Total time: 0.804 secs
+$ gradlew build
+Git repository not found at /mywork/rpm/gradle -- nebula-release tasks will not be available. Use the git.root Gradle property to specify a different directory.
+:assemble UP-TO-DATE
+:check UP-TO-DATE
+:build UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 0.732 secs
+$ ls -l
+total 40
+-rw-r--r--  1 dbgsm0  DHC\Domain Users   343 Jul 11 09:04 build.gradle
+drwxr-xr-x  3 dbgsm0  DHC\Domain Users   102 Jul 11 09:10 gradle
+-rwxr-xr-x  1 dbgsm0  DHC\Domain Users  5299 Jul 11 09:10 gradlew
+-rw-r--r--  1 dbgsm0  DHC\Domain Users  2260 Jul 11 09:10 gradlew.bat
+-rw-r--r--  1 dbgsm0  DHC\Domain Users    34 Jul 11 09:01 preInstall.sh
+

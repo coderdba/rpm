@@ -1,0 +1,20 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+plugins {
+  id 'nebula.ospackage' version '3.4.0'
+}
+
+ext {
+  etcdVersion = '3.1.11'
+}
+
+buildRpm {
+
+  packageName "etcd_3.1.11_installer"
+  version "0"
+  release "1"
+
+  preInstall file('./pkg_scripts/preInstall.sh')
+  postInstall file('./pkg_scripts/postInstall.sh')
+
+}

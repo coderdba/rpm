@@ -1,0 +1,30 @@
+plugins {
+  id 'nebula.ospackage' version '3.4.0'
+  id 'nebula.nebula-release' version '4.0.1'
+}
+
+ospackage {
+
+    os   = LINUX
+    type = BINARY
+    arch = NOARCH
+
+}
+
+buildRpm {
+
+  packageName "testRpm"
+  version "0"
+  release "1"
+
+  preInstall file('preInstall.sh')
+
+  from('install_this_file.file')
+  {
+    into '/tmp/install_this_file.file'
+    fileMode 0644
+    user 'root'
+    permissionGroup 'root'
+  }
+
+}
