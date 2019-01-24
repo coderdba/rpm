@@ -1,0 +1,1 @@
+gradlew clean build buildRpm --warning-mode all
