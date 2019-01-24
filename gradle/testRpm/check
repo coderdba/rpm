@@ -1,1 +1,1 @@
-rpm -qp --scripts build/distributions/etcd_3.1.11_installer-0-1.noarch.rpm
+rpm -qp --scripts build/distributions/testRpm-0-1.noarch.rpm
